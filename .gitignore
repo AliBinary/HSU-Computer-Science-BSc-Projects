@@ -1,41 +1,177 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# =========================================
+# 🌐 General Ignore Rules
+# =========================================
+*.log
+*.tmp
+*.bak
+*.old
+*.swp
+*.swo
+*.sln.docstates
+*.user
+*.cache
+*.lock
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
+*.pdb
+*.class
+*.o
+*.so
 *.out
-*.app
+*.DS_Store
+Thumbs.db
+Desktop.ini
 
-# debug information files
-*.dwo
+# =========================================
+# 🐍 Python
+# =========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv
+env/
+venv/
+.ipynb_checkpoints/
+.Python
+pip-log.txt
+.pytest_cache/
+*.sqlite3
+
+# =========================================
+# 💻 C / C++
+# =========================================
+*.dSYM/
+*.out
+*.obj
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.idb
+*.pch
+*.pdb
+*.sdf
+*.opensdf
+*.db
+*.cache
+Debug/
+Release/
+build/
+
+# =========================================
+# 💠 Visual Studio / C#
+# =========================================
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vsp
+*.vspscc
+*.vssscc
+*.psess
+*.vspx
+*.pidb
+*.svclog
+*.ncb
+*.aps
+*.vs/
+.vscode/
+*.dbmdl
+*.bak
+bin/
+obj/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+*.csproj.user
+
+# =========================================
+# 📱 Flutter / Dart
+# =========================================
+.dart_tool/
+.buildlog/
+.packages
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+android/.gradle/
+android/app/build/
+build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
+# =========================================
+# 🧮 MATLAB
+# =========================================
+*.asv
+*.fig
+*.mex*
+*.mat
+*.slxc
+*.autosave
+
+# =========================================
+# 🔢 Lingo / Optimization
+# =========================================
+*.lis
+*.lg4
+*.lgr
+*.lgt
+
+# =========================================
+# 🧩 SQL / Database Tools
+# =========================================
+*.sql~
+*.db
+*.sqlite
+*.mdf
+*.ldf
+*.dsn
+
+# =========================================
+# 🌐 Web (HTML / JS / CSS)
+# =========================================
+node_modules/
+dist/
+.cache/
+*.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================
+# 🧠 Other Common IDEs
+# =========================================
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# =========================================
+# ⚙️ Misc. Backup or Config Files
+# =========================================
+*.bak
+*.tmp
+*.orig
+*.rej
+*.swp
+*.swo
+*.class
+*.prefs
+*.config.old
+*.ini.old
