@@ -58,7 +58,6 @@ pip-log.txt
 *.idb
 *.pch
 *.pdb
-*.sdf
 *.opensdf
 *.db
 *.cache
@@ -140,7 +139,6 @@ ios/Flutter/flutter_export_environment.sh
 *.sqlite
 *.mdf
 *.ldf
-*.dsn
 
 # =========================================
 # 🌐 Web (HTML / JS / CSS)
