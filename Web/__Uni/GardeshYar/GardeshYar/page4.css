@@ -1,0 +1,100 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 100%;
+    font-family: "vazir";
+    background: url(./photo/zahra1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.cantenar {
+    width: 400px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 18px 60px;
+    border: 1px solid rgba(223, 230, 233, 0.7);
+    border-radius: 20px;
+    background-color: rgba(223, 230, 233, 0.7);
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form {
+    margin-top: 2rem;
+}
+
+.form label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 19px;
+}
+.form label,
+.form input {
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.form input.form-contorol {
+    width: 90%;
+    margin: auto;
+    font-family: inherit;
+    padding: 0.6rem 0.6rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form input.form-contorol::placeholder {
+    font-size: 1rem;
+}
+
+.btn {
+    display: block;
+    border: none;
+    padding: 0.4rem 1rem;
+    font-family: inherit;
+    border-radius: 10px;
+    margin: 1.1rem 0rem;
+}
+.btn-danger {
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 70%;
+    background: #048ece;
+    color: white;
+    border: 1px solid #048ece;
+    /* transition: transform 700ms; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-danger:hover {
+    /* transform: translateY(-5px); */
+    background-color: #0077b6;
+}
+.btn-success {
+    margin: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 70%;
+    background-color: #adb5bd;
+    color: white;
+    border: 1px solid #adb5bd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* transition: transform 700ms; */
+}
+.btn-success:hover {
+    background-color: #6c757d;
+    /* transform: translateY(-5px); */
+}
+
+.btn.btn-danger a {
+    text-decoration: none;
+    margin: 0px;
+}

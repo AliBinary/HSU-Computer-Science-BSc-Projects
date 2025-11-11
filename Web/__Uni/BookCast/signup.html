@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="signup.css" />
+        <link rel="stylesheet" href="captcha.css" />
+    </head>
+    <body onload="generate()">
+        <form method="dialog">
+            <div id="container">
+                <h1>Sign Up, Welcome 😍</h1>
+                <label style="margin-left: 66px">
+                    Email
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z@._]/g, '')"
+                        required
+                    />
+                </label>
+                <br />
+                <label style="margin-left: 45px">
+                    Number
+                    <input
+                        id="num"
+                        type="tel"
+                        name="number"
+                        placeholder="Enter Phone# "
+                        onkeyup="this.value = this.value.replace(/[^0-9]/g, '')"
+                        required
+                    />
+                </label>
+                <label>
+                    Username
+                    <input
+                        id="u_n"
+                        type="text"
+                        name="uname"
+                        placeholder="Enter Username"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z_]/g, '')"
+                        required
+                    />
+                </label>
+                <br />
+                <label>
+                    Password
+                    <input
+                        id="passw"
+                        type="password"
+                        name="psw"
+                        placeholder="Enter Password"
+                        required
+                    />
+                </label>
+                <br />
+                <div id="cap">
+                    <input
+                        type="text"
+                        id="captcha"
+                        placeholder="Captcha code"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z]/g, '')"
+                    />
+                    <div onclick="generate()">🔁</div>
+                    <div id="image" selectable="False"></div>
+                </div>
+                <div style="display: inline">
+                    <label id="submit"> First Enter Captcha </label>
+                    <input
+                        id="btn"
+                        value="submit"
+                        onclick="printmsg()"
+                        readonly
+                    />
+                </div>
+
+                <br />
+                <button
+                    id="secure"
+                    type="submit"
+                    onclick="check_validity()"
+                    disabled
+                >
+                    Sign up
+                </button>
+                <br />
+
+                <span
+                    >Already have account?<a href="login.html"> Login</a></span
+                >
+            </div>
+        </form>
+        <script src="captcha.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="signup.js"></script>
+    </body>
+</html>

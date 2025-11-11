@@ -1,0 +1,15 @@
+{
+  "profileTitle": "Developer Profile",
+  "name":"Ali Ghanbari",
+  "job":"Flutter & Frontend Developer",
+  "location":"Mashhad, Iran",
+  "summary":"Passionate about problem solving and competitive programming. I love building tools that help people and improve their quality of life. Enthusiastic about mathematics and artificial intelligence. Aspiring full-stack developer, and truly enjoy mobile development with Flutter.",
+  "selectedLanguage":"Selected Language",
+  "enLanguage":"English",
+  "faLanguage":"Persian",
+  "skills":"Skills and tools",
+  "personalInformation":"Personal Information",
+  "email":"Email",
+  "password":"Password",
+  "save":"Save"
+}

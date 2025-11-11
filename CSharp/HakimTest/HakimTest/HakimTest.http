@@ -1,0 +1,6 @@
+@HakimTest_HostAddress = http://localhost:5250
+
+GET {{HakimTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

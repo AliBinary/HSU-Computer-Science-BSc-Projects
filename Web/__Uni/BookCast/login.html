@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css" />
+        <link rel="stylesheet" href="captcha.css" />
+    </head>
+    <body onload="generate()">
+        <form method="dialog">
+            <div id="container">
+                <h1>Login, Welcome Back🌹</h1>
+                <label>
+                    Username
+                    <input
+                        id="u_n"
+                        type="text"
+                        name="uname"
+                        placeholder="Enter Username"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z]/g, '')"
+                        required
+                    />
+                </label>
+                <br />
+                <label>
+                    Password
+                    <input
+                        id="passw"
+                        type="password"
+                        name="psw"
+                        placeholder="Enter Password"
+                        required
+                    />
+                </label>
+                <br />
+                <label>
+                    Remember me
+                    <input type="checkbox" name="remember" />
+                </label>
+                <br />
+                <div id="cap">
+                    <input
+                        type="text"
+                        id="captcha"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z]/g, '')"
+                        placeholder="Captcha code"
+                    />
+                    <div onclick="generate()">🔁</div>
+                    <div id="image" selectable="False"></div>
+                </div>
+                <div style="display: inline">
+                    <label id="submit"> First Enter captcha </label>
+                    <input
+                        id="btn"
+                        value="submit"
+                        onclick="printmsg()"
+                        readonly
+                    />
+                </div>
+
+                <br />
+                <button
+                    id="secure"
+                    type="submit"
+                    onclick="check_validity()"
+                    disabled
+                >
+                    Login
+                </button>
+                <br />
+
+                <span
+                    >Don't have account?<a href="signup.html"> Sign Up</a></span
+                >
+                <br />
+                <span
+                    >Forget your password?<a href="forget.html">
+                        Recover Password</a
+                    ></span
+                >
+            </div>
+        </form>
+        <script src="captcha.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="login.js"></script>
+    </body>
+</html>

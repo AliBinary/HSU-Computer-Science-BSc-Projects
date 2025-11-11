@@ -1,0 +1,2 @@
+def game(number):
+    pass

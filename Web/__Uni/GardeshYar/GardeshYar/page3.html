@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../fonts/vazir.css" />
+        <link rel="stylesheet" href="./page3.css" />
+        <title>form</title>
+    </head>
+    <body>
+        <div class="cantenar">
+            <form class="form" action="page2.html">
+                <h2 class="form-title">ثبت نام | ورود</h2>
+
+                <label for="name">نام کاربری</label>
+                <input
+                    onkeyup="this.value=this.value.replace(/[^A-Za-z\s]/g,'');"
+                    type="text"
+                    for="name"
+                    id="name"
+                    class="form-contorol"
+                    placeholder="نام کاربری خود را وارد نمایید"
+                    required
+                />
+                <label for="password">کلمه عبور</label>
+                <input
+                    onkeyup="this.value=this.value.replace(/[^A-Za-z\s]/g,'');"
+                    type="password"
+                    for="password"
+                    id="password"
+                    class="form-contorol"
+                    placeholder="کلمه عبور خود را وارد کنید"
+                    required
+                />
+
+                <button class="btn btn-danger">ورود به سایت</button>
+                <button class="btn btn-success">
+                    با ایمیل خود در گوگل وارد سایت شوید
+                </button>
+                <label for="ruls" class="checkbox">
+                    <input type="checkbox" for="ruls" id="ruls" />مرابه خاطر
+                    بسپار
+                    <a href="page4.html">فراموشی کلمه عبور</a>
+                </label>
+                <div class="end">
+                    در سایت عضو نیستید؟
+                    <a href="page5.html">ثبت نام کنید</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

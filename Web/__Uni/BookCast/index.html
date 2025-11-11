@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charfalseset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BookCast</title>
+        <link rel="stylesheet" href="index.css" />
+
+        <link rel="stylesheet" href="cal.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Monoton&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <a href="load_index.html">
+                <img
+                    id="icon_site"
+                    src="img/logo_transparent.png"
+                    alt="BookCast"
+                />
+            </a>
+            <div id="menu">
+                <img id="menu_site" src="img/menu_e.png" alt="Menu" />
+                <img id="menu_site2" src="img/menu_e2.gif" alt="Menu" />
+                <div id="menu_container">
+                    <div>کودک و نوجوان</div>
+                    <div>رمان</div>
+                    <div>ادبیات</div>
+                    <div>هنر</div>
+                    <div>فلسفی</div>
+                    <div>علوم اجتماعی</div>
+                </div>
+            </div>
+            <div class="items hov" onclick="exit()">خروج</div>
+            <div class="items">پادکست‌</div>
+            <div class="items">کتاب</div>
+            <div class="items">تماس با ما</div>
+            <a href="login.html">
+                <div class="items">ورود | ثبت نام</div>
+            </a>
+            <div id="watch" selectable="False">22:22:22</div>
+            <div id="calculator">
+                <div class="items">کتابهایی که نخوانده اید را حساب کنید!</div>
+                <div id="ghab" dir="ltr">
+                    <div id="header" class="color1">
+                        <input value="0" type="text" id="lcd" disabled />
+                        <div id="keypad">
+                            <button onclick="CE()" class="key" id="ce" disabled>
+                                CE
+                            </button>
+                            <button onclick="RA()" class="key">√</button>
+                            <button onclick="FA()" class="key">x!</button>
+                            <button onclick="POW()" class="key" id="pow">
+                                ^
+                            </button>
+                            <button onclick="k7()" class="num">7</button>
+                            <button onclick="k8()" class="num">8</button>
+                            <button onclick="k9()" class="num">9</button>
+                            <button onclick="DI()" class="key" id="di">
+                                ÷
+                            </button>
+                            <button onclick="k4()" class="num">4</button>
+                            <button onclick="k5()" class="num">5</button>
+                            <button onclick="k6()" class="num">6</button>
+                            <button onclick="MU()" class="key" id="mu">
+                                ×
+                            </button>
+                            <button onclick="k1()" class="num">1</button>
+                            <button onclick="k2()" class="num">2</button>
+                            <button onclick="k3()" class="num">3</button>
+                            <button onclick="MI()" class="key" id="mi">
+                                -
+                            </button>
+                            <button onclick="k0()" class="num">0</button>
+                            <button onclick="POI()" class="key" id="poi">
+                                .
+                            </button>
+                            <button onclick="EQ()" class="key" id="eq" disabled>
+                                =
+                            </button>
+                            <button onclick="PL()" class="key" dir="pl">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="banner"><img src="img/banner.jpg" alt="banner" /></div>
+        <div class="news">
+            <div id="news_text">تازه های این هفته 😍</div>
+            <div
+                class="slider"
+                onmouseover="m_over(this)"
+                onmouseout="m_out(this)"
+            >
+                <div id="prev" onclick="next()">
+                    <img src="img/right.png" alt="right arrow" />
+                </div>
+                <div class="slides">
+                    <div
+                        class="btn"
+                        id="s1"
+                        style="background-image: url(img/book1.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        id="s2"
+                        style="background-image: url(img/book2.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        id="s3"
+                        style="background-image: url(img/book3.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        id="s4"
+                        style="background-image: url(img/book4.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        id="s5"
+                        style="background-image: url(img/book5.jpg)"
+                    ></div>
+                </div>
+                <div id="next" onclick="prev()">
+                    <img src="img/left.png" alt="left arrow" />
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/AliBinary"
+            ><img
+                id="tablighat"
+                src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=60&pause=1000&color=106BF7&background=D1F6FF&random=false&width=1250&height=150&lines=%F0%9F%91%8B+Hi%2C+I'm+Ali+Ghanbari;Computer+Science+Student+of+HSU+%F0%9F%91%A8%E2%80%8D%F0%9F%8E%93;Love+Programming+and+Algorithm!+%F0%9F%98%8D;Junior+Front-End+Dev+%F0%9F%8C%BB;Always+Learning+%F0%9F%A4%96"
+                alt="Typing SVG"
+        /></a>
+        <div class="news">
+            <div id="off_text">کتاب هایی که همه باید بخوانند 🤩</div>
+            <div
+                class="slider"
+                onmouseover="m_over2(this)"
+                onmouseout="m_out2(this)"
+            >
+                <img src="img/off.png" alt="off_img" id="off_img" />
+                <div class="slides">
+                    <div
+                        class="btn"
+                        style="background-image: url(img/good4.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        style="background-image: url(img/good5.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        style="background-image: url(img/good7.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        style="background-image: url(img/good6.jpg)"
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div id="mood_text">درمانگر خودتان باشید 🥹</div>
+            <div
+                class="slider"
+                onmouseover="m_over3(this)"
+                onmouseout="m_out3(this)"
+            >
+                <img src="img/Gmood.png" alt="off_img" id="off_img" />
+                <div class="slides">
+                    <div
+                        class="btn"
+                        style="background-image: url(img/mood1.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        style="background-image: url(img/mood2.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        style="background-image: url(img/mood3.jpg)"
+                    ></div>
+                    <div
+                        class="btn"
+                        style="background-image: url(img/mood4.jpg)"
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/AliBinary" style="text-decoration: none">
+            <footer onmouseover="heart_in()" onmouseout="heart_out()">
+                <div class="f1">
+                    Made with
+                    <div id="ali">❤️</div>
+                    by
+                    <br />
+                    <span id="author">Ali Ghanbari 🙂</span>
+                </div>
+                ای دل! صبور باش بر احداث روزگار
+                <br />
+                نیکو شود به صبر، سرانجام کار تو
+                <br />
+                <span style="margin: 0px; font-size: 40px">ابن یمین</span>
+            </footer>
+        </a>
+
+        <script src="index.js"></script>
+        <script src="cal.js"></script>
+        <script>
+            // -------------------- Heart --------------------
+            const cursorPos = document.querySelector("#ali");
+
+            const positionElement = (e) => {
+                const mouseY = e.pageY;
+                const mouseX = e.pageX;
+
+                cursorPos.style.transform = `translate3d(${mouseX - 300}px, ${
+                    mouseY - 2890
+                }px, 0)`;
+            };
+
+            function heart_in() {
+                window.addEventListener("mousemove", positionElement);
+                document.getElementById("author").innerHTML = "Ali Ghanbari 😜";
+            }
+            function heart_out() {
+                window.removeEventListener("mousemove", positionElement);
+                const cursorPos = document.querySelector("#ali");
+                cursorPos.style.transform = `translate3d(0px,0px,0)`;
+                document.getElementById("author").innerHTML = "Ali Ghanbari 🙂";
+            }
+
+            // -------------------- Watch --------------------
+            let clock = document.querySelector("#watch");
+
+            function updateTime() {
+                let hours = new Date().getHours();
+                let minutes = new Date().getMinutes();
+                let seconds = new Date().getSeconds();
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                clock.innerHTML = `${hours}:${minutes}:${seconds}`;
+
+                setTimeout(updateTime, 1000);
+            }
+            updateTime();
+        </script>
+    </body>
+</html>

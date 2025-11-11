@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <head>
+        <link rel="stylesheet" href="calculator.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Monoton&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <button class="colors">color 1</button>
+        <button class="colors">color 2</button>
+        <button class="colors">color 3</button>
+        <div id="header" class="color1">
+            <input value="0" type="text" id="lcd" disabled />
+            <div id="keypad">
+                <button onclick="CE()" class="key" id="ce" disabled>CE</button>
+                <button onclick="RA()" class="key">√</button>
+                <button onclick="FA()" class="key">x!</button>
+                <button onclick="POW()" class="key" id="pow">^</button>
+                <button onclick="k7()" class="num">7</button>
+                <button onclick="k8()" class="num">8</button>
+                <button onclick="k9()" class="num">9</button>
+                <button onclick="DI()" class="key" id="di">÷</button>
+                <button onclick="k4()" class="num">4</button>
+                <button onclick="k5()" class="num">5</button>
+                <button onclick="k6()" class="num">6</button>
+                <button onclick="MU()" class="key" id="mu">×</button>
+                <button onclick="k1()" class="num">1</button>
+                <button onclick="k2()" class="num">2</button>
+                <button onclick="k3()" class="num">3</button>
+                <button onclick="MI()" class="key" id="mi">-</button>
+                <button onclick="k0()" class="num">0</button>
+                <button onclick="POI()" class="key" id="poi">.</button>
+                <button onclick="EQ()" class="key" id="eq" disabled>=</button>
+                <button onclick="PL()" class="key" dir="pl">+</button>
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+</head>

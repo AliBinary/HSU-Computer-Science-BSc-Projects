@@ -1,0 +1,40 @@
+#cap {
+    display: flex;
+}
+input#captcha {
+    border: 2px solid black;
+}
+#image {
+    margin: 10px 30px 0;
+    width: 60px;
+    height: 30px;
+    padding: 5px 20px 0px;
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+    user-select: none;
+    text-decoration: line-through;
+    font-style: italic;
+    font-size: x-large;
+    border: red 2px solid;
+}
+label#submit {
+    margin: 0px;
+    margin-left: 20px;
+}
+input#btn {
+    width: 50px;
+    height: 5px;
+    font-size: 25px;
+    padding: 10px 10px 20px;
+    margin: 0px 20px;
+    background-color: gray;
+    box-shadow: 5px 5px black;
+}
+input#btn:hover {
+    cursor: pointer;
+}
+input#btn:hover {
+    width: 60px;
+    margin: 0px 15px;
+    background-color: aqua;
+}

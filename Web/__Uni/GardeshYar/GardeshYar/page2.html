@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html dir="rtl" style="user-select: none">
+    <head>
+        <title>GardeshYar</title>
+        <link rel="stylesheet" href="./page2.css" />
+        <!-- <link rel="stylesheet" href="./../fonts/vazir.css" /> -->
+        <link rel="stylesheet" href="./calculator.css" />
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <div class="item">هتل</div>
+                <a href="index.html"><div class="item">تور</div></a>
+                <div class="dropdown">
+                    <button class="dropbtn">بلیط</button>
+                    <div class="item al">
+                        <a href="#">هواپیما</a>
+                        <a href="#">قطار</a>
+                        <a href="#">اتوبوس</a>
+                    </div>
+                </div>
+
+                <div class="item">بیمه مسافرتی</div>
+                <div class="item">مجله سفری</div>
+                <div class="item">🛒پیگیری خرید بلیط</div>
+                <a href="page3.html"
+                    ><div class="item2">👨🏻‍💼ورود| ثبت نام</div></a
+                >
+                <div class="item2">☎︎تماس با ما</div>
+
+                <div class="dropdown2">
+                    <button class="dropbtn2" onclick="cal()">ماشین حساب</button>
+                    <div id="al2" dir="ltr">
+                        <input type="text" value="0" id="lcd" disabled />
+                        <div class="p8">
+                            <button class="b8" onclick="SINN()">sin</button>
+                            <button class="b8" onclick="COO()">cos</button>
+                            <button class="b8" onclick="TANN()">tan</button>
+                            <button class="b8" onclick="del()">DEL</button>
+                        </div>
+                        <div class="p7">
+                            <button class="b7" onclick="fact()">x!</button>
+                            <button class="b7" onclick="pow()">^</button>
+                            <button class="b7" onclick="LOOGE()">ln</button>
+                            <button class="b7" onclick="LOOG()">log</button>
+                        </div>
+                        <div class="p6">
+                            <button class="b5" onclick="cle()">C</button>
+                            <button class="b5" onclick="darsad()">%</button>
+                            <button class="b5" onclick="inv()">Inv</button>
+                            <button class="b5" onclick="radi()">√</button>
+                        </div>
+                        <div class="p2">
+                            <button class="b1" onclick="key7()">7</button>
+                            <button class="b1" onclick="key8()">8</button>
+                            <button class="b1" onclick="key9()">9</button>
+                            <button class="b1 b6" onclick="keydivid()">
+                                /
+                            </button>
+                        </div>
+                        <div class="p3">
+                            <button class="b2" onclick="key4()">4</button>
+                            <button class="b2" onclick="key5()">5</button>
+                            <button class="b2" onclick="key6()">6</button>
+                            <button class="b2 b6" onclick="keymulti()">
+                                *
+                            </button>
+                        </div>
+                        <div class="p4">
+                            <button class="b3" onclick="key1()">1</button>
+                            <button class="b3" onclick="key2()">2</button>
+                            <button class="b3" onclick="key3()">3</button>
+                            <button class="b3 b6" onclick="keyminus()">
+                                -
+                            </button>
+                        </div>
+                        <div class="p5">
+                            <button class="b4" onclick="key0()">0</button>
+                            <button class="b4" id="keymmm" onclick="keym()">
+                                .
+                            </button>
+                            <button class="b4 b6" onclick="keyequal()">
+                                =
+                            </button>
+                            <button class="b4 b6" onclick="keyplus()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="page6.html"
+                    ><img src="./photo/51.jpg" title="گردش یار"
+                /></a>
+            </div>
+        </header>
+
+        <div id="esm"></div>
+        <div id="kol">
+            <div class="key" onclick="prev()">
+                <img src="photo/icons8-double-right.gif" alt="prev" />
+            </div>
+
+            <div id="slider" onmouseover="stop()" onmouseout="run()">
+                <img class="mySlides" src="./photo/Petra.jpg" />
+                <img class="mySlides" src="./photo/Chichen Itza.jpg" />
+                <img class="mySlides" src="./photo/China Wall.jpg" />
+                <img class="mySlides" src="./photo/Christ The Redeemer.jpg" />
+                <img class="mySlides" src="./photo/Kolosseum.jpg" />
+                <img class="mySlides" src="./photo/Machu Picchu.jpg" />
+                <img class="mySlides" src="./photo/Taj Mahal.jpg" />
+            </div>
+            <div class="key" onclick="next()">
+                <img src="photo/icons8-double-left.gif" alt="next" />
+            </div>
+        </div>
+
+        <div class="matn">
+            <h4>اغاز ماجراجویی اینجاست</h4>
+            <p>تور های گروهی گردش یار ،تجربه ای ناب از سفر</p>
+        </div>
+        <div class="k1">
+            <div class="key2" id="f1" onclick="neext()">
+                <img src="photo/icons8-double-right-96.png" alt="neext" />
+            </div>
+
+            <div class="k2" id="f2">
+                <div class="text-block">
+                    <h4 id="H1"></h4>
+                    <p id="P1"></p>
+                </div>
+            </div>
+            <div class="k2" id="f3">
+                <div class="text-block">
+                    <h4 id="H2"></h4>
+                    <p id="P2"></p>
+                </div>
+            </div>
+            <div class="k2" id="f4">
+                <div class="text-block">
+                    <h4 id="H3"></h4>
+                    <p id="P3"></p>
+                </div>
+            </div>
+            <div class="k2" id="f5">
+                <div class="text-block">
+                    <h4 id="H4"></h4>
+                    <p id="P4"></p>
+                </div>
+            </div>
+            <div class="key2" id="f6" onclick="preev()">
+                <img src="photo/icons8-double-left-96.png" alt="preev" />
+            </div>
+        </div>
+        <div class="tablighat">
+            <span id="tab"></span>
+        </div>
+
+        <div class="akhbar">
+            <h2 style="margin-right: 10px; color: #fb5607">
+                سفر به جزیره کیش با قیمت های بی نظیر
+            </h2>
+            <p>
+                <strong style="margin-right: 10px"> جزیره کیش</strong> یک مقصد
+                زیبا و جذاب برای سفرهای تابستانی است. اگر به دنبال تجربه‌ای لوکس
+                و هیجان‌انگیز هستید، قیمت‌های استثنایی برای سفر به جزیره کیش را
+                از دست ندهید!
+            </p>
+            <h3 style="margin-right: 10px; color: #118ab2">
+                چرا سفر به جزیره کیش؟
+            </h3>
+            <ul>
+                <li>
+                    <strong>پروازهای مستقیم: </strong>پروازهای مستقیم از شهرهای
+                    مختلف به کیش ارائه می‌شود، که به شما زمان و هزینه‌های اضافی
+                    را صرفه‌جویی می‌کند.
+                </li>
+                <li>
+                    <strong>مناظر طبیعی زیبا: </strong>جزیره کیش با سواحل زیبا،
+                    آب‌های آبی و طبیعت فوق‌العاده‌ای مشهور است.
+                </li>
+                <li>
+                    <strong>امکانات لوکس: </strong>هتل‌ها و مجتمع های لوکس در
+                    کیش اقامتی را با امکانات عالی ارائه می‌دهند.
+                </li>
+            </ul>
+            <h3 style="margin-right: 10px; color: #d90429">تخفیف‌های ویژه</h3>
+            <ul>
+                <li>
+                    <strong>تا تاریخ 15 تیر: </strong>تخفیفات تا تاریخ 15 تیر
+                    اعمال می شود.این فرصت را از دست ندهید!
+                </li>
+                <li>
+                    <strong>رزرو آنلاین: </strong> با رزرو انلاین،قیمت های ویژه
+                    را از دست ندهید.
+                </li>
+            </ul>
+            <p style="margin-right: 10px">
+                برای اطلاعات بیشتر و رزرو،<a href="#">اینجا کلیک کنید</a>
+            </p>
+        </div>
+
+        <hr />
+        <div id="azar">
+            <div class="azar1">
+                <h3>پرواز پرتردد داخلی</h3>
+
+                <ul>
+                    <li>بلیط هواپیما تهران</li>
+                    <li>بلیط هواپیما مشهد</li>
+                    <li>بلیط هواپیما کیش</li>
+                    <li>بلیط هواپیما قشم</li>
+                    <li>بلیط هواپیما شیراز</li>
+                    <li>بلیط هواپیما تبریز</li>
+                    <li>بلیط هواپیما بندر عباس</li>
+                    <li>بلیط هواپیما اصفهان</li>
+                    <li>بلیط هواپیما اهواز</li>
+                    <li>بلیط هواپیما کرمان</li>
+                </ul>
+            </div>
+            <div class="azar1">
+                <h3>پرواز پر تردد خارجی</h3>
+                <ul>
+                    <li>بلیط هواپیمای دبی</li>
+                    <li>بلیط هواپیما استانبول</li>
+                    <li>بلیط هواپیمای تفلیس</li>
+                    <li>بلیط هواپیمای انتالیا</li>
+                    <li>بلیط هواپیمای پاریس</li>
+                    <li>بلیط هواپیمای نجف</li>
+                    <li>بلیط هواپیمای بغداد</li>
+                    <li>بلیط هواپیمای رم</li>
+                    <li>بلیط هواپیمای هامبورگ</li>
+                </ul>
+            </div>
+            <div class="azar1">
+                <h3>دسترسی سریع</h3>
+                <ul>
+                    <li>خرید بلیط قطار</li>
+                    <li>خرید بلیط اتوبوس</li>
+                    <li>رزرو تور</li>
+                    <li>رزرو هتل</li>
+                    <li>مجله گردش یار</li>
+                    <li>تماس با ما</li>
+                    <li>در باره گردش یار</li>
+                    <li>تور تفلیس</li>
+                    <li>تور با تومی</li>
+                </ul>
+            </div>
+            <div class="azar1">
+                <h3>لینک های مهم</h3>
+                <ul>
+                    <li>خرید بلیط هواپیما</li>
+                    <li>بلیط هواپیمای چارتر</li>
+                    <li>بلیط ارزان هواپیما</li>
+                    <li>راهنمای خرید بلیط هواپیما</li>
+                </ul>
+            </div>
+            <div class="azar2">
+                <button class="btnn">اینستاگرام ما</button>
+                <button class="btnn" id="tel">تلگرام ما</button>
+            </div>
+        </div>
+        <hr />
+        <div class="azar4">
+            <div class="azar3">
+                <h3 style="padding: 13px">
+                    شماره تماس و پشتیبانی:051442244 ،هفت روز هفته ،24ساعت
+                    پاسخگوی شما هستیم
+                </h3>
+                <a href="page6.html"
+                    ><button class="btnnn" onclick="showDialog()">
+                        خروج
+                    </button></a
+                >
+            </div>
+            <div class="map">
+                <img src="./photo/map.jpg" title="محل شرکت ما" />
+            </div>
+        </div>
+        <script src="./page2.js"></script>
+        <script src="./calculator.js"></script>
+    </body>
+</html>

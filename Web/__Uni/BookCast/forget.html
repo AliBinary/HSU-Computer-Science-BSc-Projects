@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recover Password</title>
+        <link rel="stylesheet" href="forget.css" />
+        <link rel="stylesheet" href="captcha.css" />
+    </head>
+    <body onload="generate()">
+        <form method="dialog">
+            <div id="container">
+                <h1>Recover Password 🤨</h1>
+                <label>
+                    Email
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z@._]/g, '')"
+                        required
+                    />
+                </label>
+                <br />
+                <div id="cap">
+                    <input
+                        type="text"
+                        id="captcha"
+                        placeholder="Captcha code"
+                    />
+                    <div onclick="generate()">🔁</div>
+                    <div id="image" selectable="False"></div>
+                </div>
+                <div style="display: inline">
+                    <label id="submit"> First Enter captcha </label>
+                    <input
+                        id="btn"
+                        value="submit"
+                        onclick="printmsg()"
+                        onkeyup="this.value = this.value.replace(/[^0-9a-zA-Z]/g, '')"
+                        readonly
+                    />
+                </div>
+
+                <br />
+                <button
+                    id="secure"
+                    type="submit"
+                    onclick="check_validity()"
+                    disabled
+                >
+                    Recover
+                </button>
+            </div>
+        </form>
+        <script src="captcha.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="forget.js"></script>
+    </body>
+</html>

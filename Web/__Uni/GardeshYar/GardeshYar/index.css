@@ -1,0 +1,654 @@
+* {
+    font-family: vazir;
+}
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+}
+header img {
+    height: 70px;
+    width: 70px;
+    margin-right: 285px;
+    display: flex;
+    border-radius: 10px;
+}
+
+#header {
+    display: flex;
+    position: relative;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.item2 {
+    display: flex;
+    flex-direction: row;
+    margin: 18px 40px;
+}
+.item:hover {
+    color: rgba(9, 132, 227, 1);
+}
+div.travel {
+    height: 500px;
+    width: 100%;
+
+    background: url(./photo/zahra6.jpg) 0 70% / cover no-repeat fixed border-box
+        border-box;
+
+    margin-top: 30px;
+    position: relative;
+}
+div div.kader {
+    position: absolute;
+    right: 68px;
+    top: 27px;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(243, 245, 246, 0.6);
+    display: flex;
+}
+.kader .box {
+    width: 20%;
+    height: 450px;
+}
+.kader .box3 {
+    width: 5%;
+    height: 450px;
+    background-color: rgba(55, 134, 174, 0.3);
+}
+.box3 img {
+    height: 50px;
+    border-radius: 8px;
+}
+div.box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(55, 134, 174, 0.3);
+}
+.item1 {
+    margin: 18px 20px;
+    /* font-size: 16px; */
+    font-weight: bold;
+}
+
+.kader .box2 {
+    width: 66%;
+    height: 400px;
+}
+
+form.form {
+    width: 100%;
+    height: 50%;
+    margin-top: 15px;
+}
+#maghsad {
+    height: 40px;
+    width: 43.5%;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: white;
+}
+#maghsad:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+#mabda {
+    height: 40px;
+    width: 43%;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: white;
+}
+#mabda:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.8);
+}
+#tedad1 {
+    height: 40px;
+    width: 12%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 8px;
+    border: white;
+}
+#tedad1:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+
+#tedad {
+    height: 40px;
+    width: 12%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 8px;
+    border: white;
+}
+#tedad:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+#tedad2 {
+    height: 40px;
+    width: 12%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 8px;
+    border: white;
+}
+#tedad2:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+#t1 {
+    height: 40px;
+    width: 16.5%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: white;
+}
+#t1:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+#t2 {
+    height: 40px;
+    width: 16.5%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: white;
+}
+#t2:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+#t3 {
+    height: 40px;
+    width: 16.5%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: white;
+}
+#t3:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+#tadadshab {
+    height: 40px;
+    width: 12%;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-right: 9px;
+    border: white;
+}
+#tadadshab:hover {
+    box-shadow: 2px 5px rgba(223, 230, 233, 0.6);
+}
+/* .form input#tedad::placeholder {
+    font-size: 4rem;
+} */
+.form label {
+    font-weight: bold;
+    margin-right: 7px;
+}
+/* .form input#maghsad::placeholder {
+    font-size: 1rem;
+}
+.form input#mabda::placeholder {
+    font-size: 1rem;
+} */
+#buttonnn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 130px;
+    margin-right: 5px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#buttonnn:hover {
+    background-color: rgba(234, 32, 39, 1);
+    cursor: pointer;
+}
+.matn {
+    background-color: rgba(55, 134, 174, 0.6);
+    height: 112px;
+    width: 898px;
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.tur {
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+}
+.tur strong {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-right: 530px;
+    color: gray;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.photoaaa {
+    height: 290px;
+    width: calc(100% - 40px);
+    display: flex;
+    overflow: hidden;
+    margin: 20px;
+}
+div.photo {
+    width: calc(33.33% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 0px 20px 40px rgb(252, 250, 254);
+    transition: transform 600ms;
+}
+.photo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+div#f1 {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(41, 98, 255, 0) 50%,
+            rgba(6, 43, 100, 0.6) 85%
+        ),
+        url(./photo/59.jpg);
+    background-size: cover;
+}
+
+div#f2 {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(41, 98, 255, 0) 50%,
+            rgba(6, 43, 100, 0.6) 85%
+        ),
+        url(./photo/60.jpg);
+    background-size: cover;
+}
+div#f3 {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(41, 98, 255, 0) 50%,
+            rgba(29, 64, 117, 0.6) 85%
+        ),
+        url(./photo/61.jpg);
+    background-size: cover;
+    background-position: 0 60%;
+}
+div#f4 {
+    background: linear-gradient(
+            to bottom,
+            rgba(41, 98, 255, 0) 50%,
+            rgba(6, 43, 100, 0.6) 85%
+        ),
+        url(./photo/56.jpg);
+    background-size: cover;
+}
+div#f5 {
+    background: linear-gradient(
+            to bottom,
+            rgba(41, 98, 255, 0) 50%,
+            rgba(6, 43, 100, 0.6) 85%
+        ),
+        url(./photo/57.jpg);
+    background-size: cover;
+    background-position: 0 60%;
+}
+div#f6 {
+    background: linear-gradient(
+            to bottom,
+            rgba(41, 98, 255, 0) 50%,
+            rgba(17, 67, 141, 0.6) 85%
+        ),
+        url(./photo/58.jpg);
+    background-size: cover;
+    background-position: 0 60%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(223, 230, 233, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.6s ease;
+}
+
+#f1:hover .overlay {
+    height: 50%;
+}
+#f2:hover .overlay {
+    height: 50%;
+}
+#f3:hover .overlay {
+    height: 50%;
+}
+#f4:hover .overlay {
+    height: 50%;
+}
+#f5:hover .overlay {
+    height: 50%;
+}
+#f6:hover .overlay {
+    height: 50%;
+}
+#f7:hover .overlay {
+    height: 30%;
+}
+#f8:hover .overlay {
+    height: 50%;
+}
+#f9:hover .overlay {
+    height: 50%;
+}
+#f10:hover .overlay {
+    height: 50%;
+}
+#f11:hover .overlay {
+    height: 50%;
+}
+
+.text {
+    font-family: inherit;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.turr {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+}
+.turr h2 {
+    margin-right: 520px;
+    font-size: 30px;
+    color: rgba(9, 132, 227, 1);
+}
+.turr p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    padding: 0px 30px;
+    /* text-justify: auto; */
+}
+div.boxx {
+    height: 600px;
+    width: calc(100% - 40px);
+    margin: 20px;
+    display: flex;
+    overflow: hidden;
+}
+div.boxx1 {
+    position: relative;
+    width: calc(33.33% - 20px);
+    height: calc(100% - 30px);
+    background: url(./photo/mashhad.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.boxx2 {
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+}
+.boxx2 .boxx4 {
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
+    background: url(./photo/tabriz.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+.boxx2 .boxx5 {
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
+    background: url(./photo/kish2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.boxx3 {
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+}
+.boxx3 .boxx6 {
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
+    background: url(./photo/sfahan.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.boxx3 .boxx7 {
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(50% - 20px);
+    background: url(./photo/shiraz.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#back {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 350px;
+    background: url(./photo/zahra7.jpg) 0 40% / cover fixed;
+    /* background-attachment: fixed; */
+}
+.back2 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 40%;
+    height: 200px;
+    color: black;
+    background-color: rgba(223, 230, 233, 0.6);
+    border-radius: 13px;
+    box-shadow: 4px 4px rgba(180, 194, 200, 0.6);
+}
+#but {
+    width: 20%;
+    height: 35px;
+    color: #421ce3;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0.1rem solid #421ce3;
+    background: linear-gradient(200deg, #7f7fd5, #86a8e7, #91eae4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+#backk {
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 500px;
+}
+
+.backk1 {
+    position: relative;
+    width: calc(50% - 20px);
+    height: calc(100% - 20px);
+    background: rgba(223, 230, 233, 0.5);
+    padding: 17px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#azar {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.azar1 {
+    width: 16%;
+    height: 100%;
+    padding: 10px;
+}
+.azar1 ul {
+    list-style-type: none;
+}
+.azar1 h3 {
+    margin-right: 30px;
+}
+.azar2 {
+    display: flex;
+    width: 20%;
+    height: 70px;
+    margin-inline: 40px;
+    margin-top: 70px;
+}
+
+.btnn {
+    margin: 5px;
+    width: 50%;
+    height: 60px;
+    font-size: 17px;
+    background: linear-gradient(#6765a7, #c02d8a, #eb8b55);
+    color: white;
+    border: #e74c3c;
+    cursor: pointer;
+    transition: transform 700ms;
+}
+.btnn:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-10px);
+}
+.btnnn {
+    float: right;
+    margin-top: 50px;
+    margin-right: 15px;
+    width: 50%;
+    height: 40px;
+    background-color: rgba(234, 32, 39, 1);
+    border: red;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.btnnn:hover {
+    box-shadow: 0 4px 4px 0 rgba(249, 240, 240, 0.2),
+        0 4px 4px 0 rgba(249, 240, 240, 0.2);
+}
+
+#tel {
+    margin: 5px;
+    width: 50%;
+    height: 60px;
+    background: #2193cd;
+    font-size: 17px;
+}
+.azar4 {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+.azar3 {
+    width: 50%;
+    height: 250px;
+}
+
+.map {
+    width: 50%;
+    height: 250px;
+}
+.map img {
+    height: 200px;
+    width: 200px;
+    border-radius: 13px;
+    margin-right: 450px;
+    margin-top: 20px;
+    transition: transform 700ms;
+}
+.map img:hover {
+    transform: translateY(-10px);
+}
+
+/* قسمت منو ابشاری است */
+.dropbtn {
+    /* background-color: #04aa6d; */
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 6px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.item.al {
+    margin: 0px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 13px;
+}
+.item.al a {
+    color: black;
+    padding: 15px 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 13px;
+}
+.dropdown:hover .item.al {
+    display: block;
+}
+.item.item.al a:hover {
+    background-color: #ddd;
+}
+/* قسمت ساعت هست */
+#datetime {
+    position: absolute;
+    direction: ltr;
+    bottom: 500px;
+    right: 960px;
+    top: 0px;
+    width: 16%;
+    height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}

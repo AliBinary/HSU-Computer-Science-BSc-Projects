@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../fonts/vazir.css" />
+        <link rel="stylesheet" href="./page5.css" />
+
+        <title>form 3</title>
+    </head>
+    <body onload="generate()">
+        <div id="asli">
+            <div class="cantenar">
+                <form class="form" action="#" method="dialog">
+                    <label for="name">نام نام خانوادگی</label>
+                    <input
+                        onkeyup="this.value=this.value.replace(/[^A-Za-z\s]/g,'');"
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-contorol"
+                        placeholder="نام نام خانوادگی خود را وارد نمایید"
+                        required
+                    />
+                    <label for="email">ایمیل</label>
+                    <input
+                        onkeyup="this.value=this.value.replace(/[^A-Za-z-@-.\s]/g,'');"
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-contorol"
+                        placeholder="ایمیل خود را وارد نمایید"
+                        required
+                    />
+
+                    <label for="numberr">شماره تلفن</label>
+                    <input
+                        onkeyup="this.value = this.value.replace(/[^0-9-]/g, '');"
+                        type="tel"
+                        dir="rtl"
+                        name="numberr"
+                        id="numberr"
+                        class="form-contorol"
+                        placeholder="شماره تلفن خود را وارد نمایید"
+                        required
+                    />
+
+                    <div class="coly">
+                        <div class="f1">
+                            <div id="user-input">
+                                <input
+                                    type="text"
+                                    id="submit"
+                                    placeholder="Captcha code"
+                                />
+                            </div>
+
+                            <div id="image" selectable="False"></div>
+                            <div class="btt" onclick="generate()"></div>
+                        </div>
+                        <div class="f2">
+                            <input
+                                type="submit"
+                                id="bttn"
+                                onclick="printmsg()"
+                            />
+                            <p id="key"></p>
+                        </div>
+                    </div>
+
+                    <button
+                        id="taeed"
+                        class="btn btn-danger"
+                        onclick="zahra() "
+                        disabled
+                    >
+                        تایید
+                    </button>
+                    <button class="btn btn-success" style="color: white">
+                        <a href="page3.html" style="color: white">بازگشت</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script src="./page5.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

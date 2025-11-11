@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" style="user-select: none">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./.././fonts/vazir.css" />
+
+        <link rel="stylesheet" href="./page4.css" />
+        <title>form 2</title>
+    </head>
+    <body>
+        <div id="asli">
+            <div class="cantenar">
+                <form class="form" method="dialog">
+                    <label for="email">ایمیل</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-contorol"
+                        placeholder="ایمیل خود را وارد نمایید"
+                        onkeyup="this.value=this.value.replace(/[^A-Za-z-@\s]/g,'');"
+                    />
+
+                    <button class="btn btn-danger">
+                        <a href="./page3.html">تایید</a>
+                    </button>
+
+                    <button class="btn btn-success">
+                        <a href="page3.html">بازگشت</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+@EducationalAPI_HostAddress = http://localhost:5049
+
+GET {{EducationalAPI_HostAddress}}/Product/
+Accept: application/json
+
+###
